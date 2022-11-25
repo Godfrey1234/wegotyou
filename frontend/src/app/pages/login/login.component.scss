@@ -1,0 +1,155 @@
+.container1{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    margin-top: -2rem;
+   
+ 
+}
+
+.circle1{
+    background-color: #E09F3E;
+    width: 75%;
+    height: 11.2rem;
+   
+    border-radius: 0rem 0rem 45% 50%;
+    margin-left: -1.5rem;
+}
+
+.circle2{
+    background-color: #14213D;
+    width: 73%;
+    height: 9rem;
+    margin-left: 80%;
+    border-radius: 35% 0 50% 50%;
+    margin-top: -10px;
+    overflow: hidden;
+
+}
+
+.form{
+   
+    background-color: #ffff;
+    margin-top: -3rem;
+}
+
+section{
+    background-color: #D9D9D9;
+}
+
+.logo{
+    margin-left: 38%;
+    margin-right: 35%;
+    width: 5.5rem;
+    height: 4rem;
+    margin-right: 30%;
+    border-radius: 1rem;
+    border: solid;
+    background-color: white;
+    margin-top: -3.5rem;
+    position: relative;
+}
+
+.img-fluid{
+    
+    position: relative;
+}
+
+.sp{
+    font-size: 3px;
+    margin-top: -3rem;
+}
+
+.form{
+    height:cover;
+}
+
+.btn{
+    margin-right: 15%;
+    margin-left: 15%;
+    width: 80%;
+    height: 3rem;
+    background-color: #14213D;
+    border-radius: 3rem;
+    margin-top: 2rem;
+
+}
+
+.text-muted{
+
+    float: right;
+    cursor: pointer;
+    
+}
+
+.linki{
+
+  float: right;
+   margin-left: 70%;
+   margin-top: 2rem;
+   margin-bottom: 0%;
+  color: blue;
+
+}
+
+.signinp{
+    color: white;
+    font-weight: bold;
+   
+}
+
+
+.input-group-text{
+    background-color: #14213D;
+    height: 4rem;
+    border-radius: 1rem 0 0 1rem ;
+   
+}
+
+.bi{
+    color: white;
+    font-size: 1.1rem;
+}
+
+span{
+    color: white;
+}
+
+input{
+    border-color:black;
+    border-radius: 1rem;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+}
+@media (min-width: 0px) and (max-width: 768px) { 
+    .card{
+        border: none;
+        
+    }
+    .col-xl-10
+    {
+        padding: 0;
+    }
+    
+    .header{
+        width: 100%;
+        height: auto;
+        margin-top: -10rem;
+       
+     
+    }
+
+
+}
