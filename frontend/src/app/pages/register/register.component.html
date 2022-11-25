@@ -41,6 +41,7 @@
                                 </div>
                                 <input type="text" class="form-control" formControlName="email" placeholder="Enter your Email" aria-label="Username" aria-describedby="basic-addon1">
                               </div>
+                              
                         
                         <label>Password</label> 
                               <div class="input-group mb-3">
@@ -63,7 +64,7 @@
                         </div>
             
                       
-                        <p class="linki">Sign in</p>
+                        <p class="linki" [routerLink]="['/login']" routerLinkActive="router-link-active">Sign in</p>
                         <div class="circle2"></div>
             
                     </form>

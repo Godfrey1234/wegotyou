@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WegotyouService } from 'src/app/service/wegotyou.service';
 import { FormBuilder, FormControl, FormGroup, NgForm,Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -19,7 +20,9 @@ export class LoginComponent implements OnInit {
     
   });
 
-  constructor(private service:WegotyouService) { }
+  constructor(private service:WegotyouService, private router:Router) { }
+
+  public isVisible: boolean = false;
 
   ngOnInit(): void {
   }
@@ -27,7 +30,18 @@ export class LoginComponent implements OnInit {
   onLogin(){
 
     this.service.login(this.loginForm.value).subscribe((response)=>{
-      console.log(response)
+      
+      if(response === 'invalid login details' || response === 'enter username and password'){
+        console.log(response)
+        this.isVisible=true;
+        setTimeout(()=>this.isVisible=false,1000)
+
+      }else{
+        console.log(response)
+        this.router.navigate(['home'])
+       
+      }
+     
     })
 
   }
