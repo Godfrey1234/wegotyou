@@ -12,7 +12,7 @@
               <div class="col-md-6 col-lg-7 d-flex align-items-center">
                 <div class="card-body p-4 p-lg-5 text-black">
   
-                    <form style="width: auto;">
+                  <form  [formGroup]="loginForm" (ngSubmit)="onLogin()" style="width: auto;">
                         <div class="header">
                             <div class="circle1">
                                 <div class="circle2"></div>
@@ -28,7 +28,7 @@
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Enter your Email" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" formControlName="email" placeholder="Enter your Email" aria-label="Username" aria-describedby="basic-addon1">
                               </div>
                          
                       
@@ -36,7 +36,7 @@
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Enter your password" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" formControlName="password" placeholder="Enter your password" aria-label="Username" aria-describedby="basic-addon1">
                               </div>
                         
             

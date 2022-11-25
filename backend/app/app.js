@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require("body-parser");
 
-
+const routes = require("../routes/routes")
 
 app.use(bodyParser.json());
 
@@ -33,3 +33,5 @@ const PORT = process.env.PORT || 3000;
 const server = app.listen(PORT, () => {
   console.log(`Server Running: http://localhost:${PORT}`);
 });
+
+app.use('/',routes)

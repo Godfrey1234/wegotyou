@@ -13,7 +13,7 @@
               <div class="col-md-6 col-lg-7 d-flex align-items-center">
                 <div class="card-body p-4 p-lg-5 text-black">
   
-                    <form style="width: auto;">
+                    <form  [formGroup]="RegisterForm" (ngSubmit)="onRegister()" style="width: auto;">
                         <div class="header">
                             <div class="circle1">
                               
@@ -31,7 +31,7 @@
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Enter your fullname" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control"  formControlName="name" placeholder="Enter your fullname" aria-label="Username" aria-describedby="basic-addon1">
                               </div>
                          
                         <label>Email</label> 
@@ -39,7 +39,7 @@
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="basic-addon1"> <i class="bi bi-envelope"></i></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Enter your Email" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" formControlName="email" placeholder="Enter your Email" aria-label="Username" aria-describedby="basic-addon1">
                               </div>
                         
                         <label>Password</label> 
@@ -47,14 +47,14 @@
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Enter your password" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" formControlName="password" placeholder="Enter your password" aria-label="Username" aria-describedby="basic-addon1">
                               </div>
                         <label>Confirm</label> 
                               <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Confirm your password" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" formControlName="confirm" placeholder="Confirm your password" aria-label="Username" aria-describedby="basic-addon1">
                               </div>
             
             
