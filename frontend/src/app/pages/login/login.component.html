@@ -28,7 +28,7 @@
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
                                 </div>
-                                <input type="text" class="form-control" formControlName="email" placeholder="Enter your Email" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" formControlName="email" placeholder="Enter your Email" aria-label="Username" aria-describedby="basic-addon1" required>
                               </div>
                          
                       
@@ -36,13 +36,13 @@
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
                                 </div>
-                                <input type="text" class="form-control" formControlName="password" placeholder="Enter your password" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" formControlName="password" placeholder="Enter your password" aria-label="Username" aria-describedby="basic-addon1" required>
                               </div>
                         
             
             
                         <div class="pt-1 mb-4">
-                          <button class="btn"><span>Sign in</span></button>
+                          <button class="btn"  [disabled]="!loginForm.valid"><span>Sign in</span></button>
                         </div>
             
                         <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
