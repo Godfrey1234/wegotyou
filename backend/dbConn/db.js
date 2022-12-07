@@ -15,7 +15,7 @@ pool.connect((err,) => {
     }else{
         console.log("Database connected");
     }
-    // Do what you have to do with the pool client now
+   
 })
 
 module.exports = pool;

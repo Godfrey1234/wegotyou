@@ -1,5 +1,5 @@
 
-<section class="vh-100" style="background-color: #ffff;">
+<!-- <section class="vh-100" style="background-color: #ffff;">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col col-xl-10">
@@ -61,4 +61,72 @@
     <div class="updated" [class.visible]="isVisible">
       <i class="fa fa-exclamation-circle" style="font-size: 20px;"></i>invalid login details
      </div>
-  </section>
+  </section> -->
+
+
+  <html>
+<head>
+	<title>Animated Login Form</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body >
+
+	
+	
+  <img class="wave">
+
+  <div class="container">
+    
+		<div class="img" >
+			<img class="at-item " src="../../../assets/img/bg.svg">
+		
+    
+    </div>
+		<div class="login-content">
+		
+    
+      <form  [formGroup]="loginForm" (ngSubmit)="onLogin()" >
+				<img class="logo" src="../../../assets/Screenshot 2022-11-24 at 02.20.37.png">
+				<h2 class="t" style="color:white; font-size: 80%; margin-bottom: 2rem;" >We got you</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+                  <i class="bi bi-envelope-at-fill"></i>
+           		   </div>
+           		   <div class="div">
+           		   		
+           		   		<input type="text" class="input" placeholder="Email">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+                  <i class="bi bi-shield-lock-fill"></i>
+           		   </div>
+           		   <div class="div">
+           		    
+           		    	<input type="password" class="input" placeholder="password">
+            	   </div>
+            	</div>
+              <table>
+                <tr>
+                <th> 
+                  <a href="#">Sign up</a>
+                </th>
+               
+                <th>
+                  <a href="#" >Forgot Password?</a>
+                  </th>
+              </tr>
+            </table>
+             
+            	<input type="submit" class="btn" value="Sign in">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../assets/js/main.js"></script>
+
+
+   </body>
+</html>
