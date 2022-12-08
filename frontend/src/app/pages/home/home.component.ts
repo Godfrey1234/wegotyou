@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
+  public isVisible: boolean = false;
 
   ngOnInit(): void {
   }
+
+
 
 }

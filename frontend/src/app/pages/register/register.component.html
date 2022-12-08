@@ -37,7 +37,7 @@
                                 <input type="text" class="form-control" minlength="3" name="name" ngModel #name="ngModel" placeholder="Enter your fullname" aria-label="Username" aria-describedby="basic-addon1" required>
                           </div>
                           <span class="help-block" *ngIf="name.errors?.['required'] && name.touched">
-                            <p class="er">surname is required!</p>
+                            <p class="er">name is required!</p>
                             <br>
                           </span>
                           <span class="help-block" *ngIf="name.errors?.['minlength']">
@@ -65,23 +65,40 @@
                           
                         
                         <label>Password</label> 
-                              <div class="input-group mb-3">
+                              <div class="input-group mb-3" [class.has-error]="password.invalid && password.touched" [class.has-success]="password.valid ">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
                                 </div>
-                                <input  type="password" class="form-control" name="password" ngModel placeholder="Enter your password" aria-label="Username" aria-describedby="basic-addon1" required>
+                                <input  type="password" class="form-control" minlength="5"  name="password" ngModel placeholder="Enter your password" #password="ngModel" aria-label="Username" aria-describedby="basic-addon1" required>
                               </div>
+                              <span class="help-block" *ngIf="password.errors?.['required'] && password.touched">
+                                <p class="er">password is required!</p>
+                                <br>
+                              </span>
+                              <span class="help-block" *ngIf="password.errors?.['minlength']">
+                                <p class="er">password must be at least 5 characters long.</p>
+                                <br>
+                              </span>
+
+
                         <label>Confirm</label> 
-                              <div class="input-group mb-3">
+                              <div class="input-group mb-3" [class.has-error]="confirm.invalid && confirm.touched" [class.has-success]="confirm.valid ">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
                                 </div>
-                                <input  type="password" class="form-control" name="confirm" ngModel placeholder="Confirm your password" aria-label="Username" aria-describedby="basic-addon1" required>
+                                <input  type="password" class="form-control" name="confirm" minlength="5"  ngModel placeholder="Confirm your password" #confirm="ngModel"  aria-label="Username" aria-describedby="basic-addon1" required>
                               </div>
-            
+                              <span class="help-block" *ngIf="confirm.errors?.['required'] && confirm.touched">
+                                <p class="er">Confirm is required!</p>
+                                <br>
+                              </span>
+                              <span class="help-block" *ngIf="confirm.errors?.['minlength']">
+                                <p class="er">Confirm must be the same as the passwword.</p>
+                                <br>
+                              </span>
             
                         <div class="pt-1 mb-4">
-                          <button class="btn"  [disabled]="!userPost.valid"><span>Sign up</span></button>
+                          <button class="btn" type="submit" [disabled]="!userPost.valid"><span>Sign up</span></button>
                         </div>
             
                       

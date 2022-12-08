@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
 
   onLogin(){
 
-    this.service.login(this.loginForm.value).subscribe((response)=>{
+    this.service.login(this.loginForm.value).subscribe((response:any)=>{
       
       if(response === 'invalid login details' || response === 'enter username and password'){
         console.log(response)
@@ -38,6 +38,8 @@ export class LoginComponent implements OnInit {
 
       }else{
         console.log(response)
+        //store data to local storage
+        localStorage.setItem("token1",response);
         this.router.navigate(['home'])
        
       }

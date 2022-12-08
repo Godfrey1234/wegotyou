@@ -34,8 +34,8 @@ export class RegisterComponent implements OnInit {
 
   onRegister(data:any){
 
-    console.log(this.RegisterForm.value)
-    this.service.Register(this.RegisterForm.value).subscribe((response)=>{
+    console.log(data)
+    this.service.Register(data).subscribe((response)=>{
      if(response === 'password dont match'){
         console.log(response)
         this.isVisible=true;
@@ -47,6 +47,8 @@ export class RegisterComponent implements OnInit {
         setTimeout(()=>this.isVisible2=false,1000)
        
       }else{
+
+        
 
         console.log(response)
         this.router.navigate(['login'])

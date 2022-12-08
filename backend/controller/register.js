@@ -46,7 +46,7 @@ exports.register = (req, res) => {
   
     }else{
   
-      res.send('password dont match')
+      res.status(200).json('password dont match')
     }
     
   };
