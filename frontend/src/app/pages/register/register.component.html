@@ -1,5 +1,5 @@
 
-
+<!-- 
 <section class="vh-100" style="background-color: #ffff;">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -124,4 +124,143 @@
      <div class="updated" [class.visible]="isVisible2">
       <i class="fa fa-exclamation-circle" style="font-size: 20px;"></i>password dont match
      </div>
-  </section>
+  </section> -->
+
+
+
+
+
+
+  <html>
+<head>
+	
+
+
+</head>
+<body >
+
+	
+  <div class="container">
+    
+		<div class="img" >
+			<img class="at-item "  src="../../../assets/img/undraw_my_app_re_gxtj.svg">
+		
+    
+    </div>
+		<div class="login-content">
+		
+    <br><br>
+      <form  #userPost="ngForm" (ngSubmit)="onRegister(userPost.value)" NG_VALIDATORS NG_VALIDATORS>
+
+    <br><br>
+    <br><br>
+				<img class="logo" src="../../../assets/Screenshot 2022-11-24 at 02.20.37.png">
+				<h2 class="t" style="color:white; font-size: 80%; margin-bottom: 2rem;" >We got you</h2>
+           		<div class="input-div one" >
+           		   <div class="i">
+                  <i class="bi bi-person-fill"></i>
+           		   </div>
+
+           		   <div class="div"  [class.has-error]="name.invalid && name.touched" [class.has-success]="name.valid ">
+  	
+           		   		<input type="text" class="input" name="name" ngModel minlength="3" #name="ngModel" placeholder="Enter your fullname" required>
+                      <span class="help-block" *ngIf="name.errors?.['required'] && name.touched">
+                        <p class="er">name is required!</p>
+                        <br>
+                      </span>
+                      <span class="help-block" *ngIf="name.errors?.['minlength']">
+                        <p class="er">name must be at least 3 characters long.</p>
+                        <br>
+                      </span>
+              
+                  </div>
+           		</div>
+
+           		<div class="input-div pass">
+           		   <div class="i"> 
+                  <i class="bi bi-envelope-at-fill"></i>
+           		   </div>
+
+
+           		   <div class="div" [class.has-error]="email.invalid && email.touched" [class.has-success]="email.valid ">
+           		    
+           		    	<input type="email" name="email" ngModel #email="ngModel" class="input" email placeholder="Enter your Email" required>
+            	   
+                     <span class="help-block" *ngIf="email.errors?.['required'] && email.touched">
+                      <p class="er">Email is required!</p>
+                    
+                    </span>
+                    <span class="help-block" *ngIf="email.errors?.['email'] && email.touched">
+                      <p class="er"> Email is invalid!</p>
+                    </span>
+                 
+                  </div>
+                 
+                
+
+
+            	</div>
+             
+              <div class="input-div pass">
+                <div class="i"> 
+                <i class="bi bi-shield-lock-fill"></i>
+                </div>
+                <div class="div"  [class.has-error]="password.invalid && password.touched" [class.has-success]="password.valid ">
+                 
+                   <input type="password" #password ="ngModel" minlength="5" ngModel name="password" required  class="input" placeholder="Enter your password">
+
+                   <span class="help-block" *ngIf="password.errors?.['required'] && password.touched">
+                    <p class="er">password is required!</p>
+                    <br>
+                  </span>
+                  <span class="help-block" *ngIf="password.errors?.['minlength']">
+                    <p class="er">password must be at least 5 characters long.</p>
+                    <br>
+                  </span>
+
+
+               </div>
+            </div>
+
+
+            
+
+            <div class="input-div pass">
+              <div class="i"> 
+              <i class="bi bi-shield-lock-fill"></i>
+              </div>
+              <div class="div"[class.has-error]="confirm.invalid && confirm.touched" [class.has-success]="confirm.valid ">
+               
+                 <input type="password" #confirm="ngModel" ngModel name="confirm" minlength="5" required class="input" placeholder="Confirm your password">
+
+
+
+                 <span class="help-block" *ngIf="confirm.errors?.['required'] && confirm.touched">
+                  <p class="er">Confirm is required!</p>
+                  <br>
+                </span>
+
+                <span class="help-block" *ngIf="confirm.errors?.['minlength']">
+                  <p class="er">Confirm must be the same as the passwword.</p>
+                  <br>
+                </span>
+
+
+             </div>
+          </div>
+                
+            <a href="#" style="float:right; margin-right: 1rem; margin-bottom: 1rem;" [routerLink]="['/login']" routerLinkActive="router-link-active" >Sign in</a>
+              
+             
+            	
+              
+              <button class="btn" type="submit" [disabled]="!userPost.valid"><span>Sign up</span></button>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../../assets/js/main.js"></script>
+
+   </body>
+
+
+</html>

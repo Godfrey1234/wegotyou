@@ -66,7 +66,7 @@
 
   <html>
 <head>
-	<title>Animated Login Form</title>
+	
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
@@ -76,28 +76,31 @@
 
 	
 	
-  <img class="wave">
+ 
 
-  <div class="container">
+  <div class="container" >
     
 		<div class="img" >
+
 			<img class="at-item " src="../../../assets/img/bg.svg">
 		
     
     </div>
 		<div class="login-content">
 		
-    
-      <form  [formGroup]="loginForm" (ngSubmit)="onLogin()" >
+    <br>
+
+      <form  [formGroup]="loginForm" (ngSubmit)="onLogin()"  style="position:fixed">
 				<img class="logo" src="../../../assets/Screenshot 2022-11-24 at 02.20.37.png">
 				<h2 class="t" style="color:white; font-size: 80%; margin-bottom: 2rem;" >We got you</h2>
+        <br><br>
            		<div class="input-div one">
            		   <div class="i">
                   <i class="bi bi-envelope-at-fill"></i>
            		   </div>
            		   <div class="div">
            		   		
-           		   		<input type="text" class="input" placeholder="Email">
+           		   		<input type="text" formControlName="email"  class="input" placeholder="Email">
            		   </div>
            		</div>
            		<div class="input-div pass">
@@ -106,13 +109,13 @@
            		   </div>
            		   <div class="div">
            		    
-           		    	<input type="password" class="input" placeholder="password">
+           		    	<input type="password" formControlName="password"  class="input" placeholder="password">
             	   </div>
             	</div>
               <table>
                 <tr>
                 <th> 
-                  <a href="#">Sign up</a>
+                  <a href="#" [routerLink]="['/register']" routerLinkActive="router-link-active" >Sign up</a>
                 </th>
                
                 <th>
@@ -121,7 +124,8 @@
               </tr>
             </table>
              
-            	<input type="submit" class="btn" value="Sign in">
+            <button class="btn"  [disabled]="!loginForm.valid"><span>Sign in</span></button>
+
             </form>
         </div>
     </div>
@@ -130,3 +134,14 @@
 
    </body>
 </html>
+
+<div class="updated" [class.visible]="isVisible">
+
+   <table>
+    <tr class="popUp">
+      <i class="bi bi-patch-exclamation" style="color:white ;"></i><span>invalid login details</span>
+      </tr>
+   </table>
+   
+ 
+</div>

@@ -4,6 +4,7 @@ body{
     
    
     padding-bottom: 0;
+  
 }
 
 
@@ -11,8 +12,8 @@ body{
     position: fixed;
      top: 0;
      right: 0.5rem;
-    border:1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
+  width: 15rem;
+  height: 5rem;
     padding: 2rem;
     background: #14213D;
     color: #ffffff;
@@ -27,11 +28,17 @@ body{
     transform: translateY(1.25rem);
   }
 
+  .popUp{
+    margin-left: 1rem;
+    text-align: center;
+  }
 
-  // Variable overrides first
+
+// Variable overrides first
 $primary: #900;
 $enable-shadows: true;
 $prefix: "mo-";
+
 
 // Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
