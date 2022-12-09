@@ -133,6 +133,7 @@ i{
     height: cover;
     width: 100%;
     background-color: white;
+  
    
 }
 
@@ -141,3 +142,51 @@ i{
 .th2{
     width: 20%;
 }
+
+.imgCl{
+    margin-left: 1rem;
+    width: 35rem;
+    height: 25rem;
+}
+
+
+
+//left side animation
+
+.card2{
+   
+    
+    animation-name: slide-right;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+      
+ 
+
+}
+@keyframes slide-right {
+        
+  	
+    0% {
+        transform:translateX(-40rem);
+    }
+    25%{
+        transform:translateX(-30rem);
+    }
+    50%{
+        transform:translateX(-20rem);
+    }
+    75%{
+        transform:translateX(-10rem);
+    }
+    100% {
+        transform:translateX(0rem);
+    }
+    
+    
+}
+
+

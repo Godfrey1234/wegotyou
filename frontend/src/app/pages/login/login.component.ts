@@ -35,6 +35,7 @@ export class LoginComponent implements OnInit {
         console.log(response)
         this.isVisible=true;
         setTimeout(()=>this.isVisible=false,1000)
+        
 
       }else{
         console.log(response)
