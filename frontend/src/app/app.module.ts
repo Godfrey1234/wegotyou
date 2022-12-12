@@ -17,6 +17,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { StepsComponent } from './components/steps/steps.component';
+import { DownloadComponent } from './pages/download/download.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { StepsComponent } from './components/steps/steps.component';
     NavbarComponent,
     FooterComponent,
     ProfileComponent,
-    StepsComponent
+    StepsComponent,
+    DownloadComponent
   ],
   imports: [
     BrowserModule,

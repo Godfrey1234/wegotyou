@@ -33,6 +33,12 @@ body{
     text-align: center;
   }
 
+  .stepper{
+    background-color: #D9D9D9;
+    height: 12rem;
+    width: 100%;
+    display: flex;
+  }
 
 // Variable overrides first
 $primary: #900;

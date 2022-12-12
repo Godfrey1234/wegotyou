@@ -26,3 +26,58 @@
 span{
     color: white;
 }
+
+.circle{
+  background-color: #14213D;
+  width: 10%;
+  height: 9rem;
+  border-radius: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.connector{
+    width: 70%;
+    height: 2rem;
+    position: absolute;
+    background-color:#14213D;
+    margin-left: 14rem;
+    margin-top: 4rem;
+
+}
+
+.bi{
+    margin-left: 3%;
+    font-size: 4rem;
+    color: white;
+  
+    position: absolute;
+}
+
+.desc{
+    margin-left: 3rem;
+    margin-top: 5rem;
+    position: absolute;
+}
+
+
+/* Responsive. */
+@media (max-width: 900px) {
+   
+
+    .stepper{
+        display: none;
+    }
+
+    .btnC{
+        margin-left: 20%;
+        background-color: #14213D;
+        border-radius: 0.5rem;
+        width: 60%;
+        height: 3rem;
+        margin-right: 20%;
+    }
+    
+  
+}

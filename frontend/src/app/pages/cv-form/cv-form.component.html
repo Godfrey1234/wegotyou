@@ -1,5 +1,26 @@
 <app-navbar></app-navbar>
 
+
+<div class="stepper">
+  <div class="connector"></div>
+
+  <div class="circle">
+      <i class="bi bi-person-fill "></i>
+    <span class="desc">cv templates</span>
+  </div>
+
+  <div class="circle">
+    <i class="bi bi-journal-text text-primary"></i>
+    
+      <span class="desc">&nbsp;cv Form</span>
+  </div>
+  <div class="circle">
+    <i class="bi bi-cloud-arrow-down-fill"></i>
+      <span class="desc">Download</span>
+  </div>
+ 
+</div>
+
      <div class="container"> 
     
    <form  #userPost="ngForm">
@@ -109,13 +130,13 @@
         </div>
    
     <br>
-        <div class="col-md-4 text-right">
-            <button  class="btn btn-success btn-block" (click)="openPDF()">Download cv</button>
-       </div>
-
+       
 
     </form>
-  
+    <div class="col-md-4 text-right">
+      <button  class="btn btn-success btn-block" (click)="openPDF()" >Download cv</button>
+ </div>
+
     
     </div>
       
@@ -138,21 +159,64 @@
      
   <br><br>
    
-    
+ 
   
 
-        <div class="container1" id="htmlData">
+<div class="container1" id="htmlData">
 
-         <h1>Curriculum vitae of </h1>
+<!--
+  
+  name:any;
+  surname:any;
+  contact:any;
+  email:any;
 
-         <div class="head"><span>Personal Details</span></div>
+  pdf:any;
 
+  text:any;
+
+  streetName:any;
+  StreetNumber: any;
+  city:any;
+  code:any;
+
+  institution:any;
+  qualification:any;
+  year:any;
+
+
+  wyear:any;
+
+
+  companyName:any;
+  position:any;
+  cyear:any;
+
+  contactPerson:any;
+  rPosition:any;
+  tel:any; -->
+
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+
+       <h1>{{name}} {{surname}}
+       </h1>
+      </div>
+      <div class="col-sm1">
+       
+      </div>
+    
+    </div>
+
+  </div>
 
 
        
 
-
-      </div>
+<br><br>
+</div>
   
 
      

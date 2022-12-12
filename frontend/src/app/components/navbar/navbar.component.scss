@@ -27,7 +27,7 @@
 .logo1{
     
     width: 40%;
-   
+   margin-left: 1rem;
     
 }
 
@@ -52,4 +52,13 @@ p{
     float: right;
     margin-left: 75rem;
     position: absolute;
+   
+}
+
+.navbar{
+    background-color: white;
+}
+
+.nav-link:hover{
+    background-color: #14213D;
 }
