@@ -1,0 +1,171 @@
+<app-navbar></app-navbar>
+
+     <div class="container"> 
+    
+   <form  #userPost="ngForm">
+
+    <div class="head"><span>Contact Details</span></div>
+    <div class="form-group">
+     
+     <label for="exampleInputEmail1">Name</label>
+   
+      <input type="text" [(ngModel)]="name"  name="name"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Name">
+   
+
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Surname</label>
+      <input type="text"  [(ngModel)]="surname" name="surname" class="form-control" id="exampleInputPassword1" placeholder="Enter your Surname">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputPassword1">Email</label>
+        <input type="email"  [(ngModel)]="email" name="email"  class="form-control" id="exampleInputPassword1" placeholder="email">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Contact</label>
+        <input type="number"   [(ngModel)]="contact" name="contact" ngModel class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+   
+   
+
+
+    <div class="head"><span>Address</span></div>
+
+    <div class="form-group">
+        <label for="exampleInputPassword1">Street Name</label>
+        <input type="text" [(ngModel)]="streetName" name="streetName" class="form-control" id="exampleInputPassword1" placeholder="Enter your Street Name">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Street Number</label>
+        <input type="text"[(ngModel)]="StreetNumber" name="StreetNumber" class="form-control" id="exampleInputPassword1" placeholder="Enter your Street Number">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">City/Town</label>
+        <input type="text" [(ngModel)]="city" name="city" class="form-control" id="exampleInputPassword1" placeholder=" Enter your City/Town">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Code</label>
+        <input type="text" [(ngModel)]="code" name="code" class="form-control" id="exampleInputPassword1" placeholder="Enter your Code">
+      </div>
+  
+
+
+    <div class="head"><span>Education</span></div>
+
+    <div class="form-group">
+        <label for="exampleInputPassword1">Institution</label>
+        <input type="text" [(ngModel)]="institution" name="institution" class="form-control" id="exampleInputPassword1" placeholder="Enter your Street Name">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Qualification</label>
+        <input type="text" [(ngModel)]="qualification" name="qualification" class="form-control" id="exampleInputPassword1" placeholder="Enter your Street Number">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">year</label>
+        <input type="text" [(ngModel)]="year" name="year" class="form-control" id="exampleInputPassword1" placeholder=" Enter your City/Town">
+      </div>
+
+
+      <div class="head"><span>Work Experience</span></div>
+
+      <div class="form-group">
+          <label for="exampleInputPassword1">Company Name</label>
+          <input type="text" [(ngModel)]="companyName" name="cName" class="form-control" id="exampleInputPassword1" placeholder="Enter your Street Name">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputPassword1">Position</label>
+          <input type="text" [(ngModel)]="position" name="position" class="form-control" id="exampleInputPassword1" placeholder="Enter your Street Number">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputPassword1">year</label>
+          <input type="text" [(ngModel)]="wyear"  name="year" class="form-control" id="exampleInputPassword1" placeholder=" Enter your City/Town">
+        </div>
+
+
+        <div class="head"><span>Reference</span></div>
+
+      <div class="form-group">
+          <label for="exampleInputPassword1">Contact Person</label>
+          <input type="text" [(ngModel)]="contactPerson"  name="cperson"  class="form-control" id="exampleInputPassword1" placeholder="Enter your Street Name">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputPassword1">Position</label>
+          <input type="text" [(ngModel)]="rPosition"  name="position"  class="form-control" id="exampleInputPassword1" placeholder="Enter your Street Number">
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputPassword1">Tel</label>
+          <input type="text" [(ngModel)]="tel" name="year"  class="form-control" id="exampleInputPassword1" placeholder=" Enter your City/Town">
+        </div>
+   
+    <br>
+        <div class="col-md-4 text-right">
+            <button  class="btn btn-success btn-block" (click)="openPDF()">Download cv</button>
+       </div>
+
+
+    </form>
+  
+    
+    </div>
+      
+      
+      
+     
+     
+
+
+
+
+
+
+
+  
+     
+     
+     
+    
+     
+  <br><br>
+   
+    
+  
+
+        <div class="container1" id="htmlData">
+
+         <h1>Curriculum vitae of </h1>
+
+         <div class="head"><span>Personal Details</span></div>
+
+
+
+       
+
+
+      </div>
+  
+
+     
+    
+    
+    
+   
+
+
+
+
+
+
+
+
+<app-footer></app-footer>

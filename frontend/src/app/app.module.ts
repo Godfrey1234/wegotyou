@@ -11,13 +11,25 @@ import { HomeComponent } from './pages/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { TemplateComponent } from './pages/template/template.component';
+import { CvFormComponent } from './pages/cv-form/cv-form.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { StepsComponent } from './components/steps/steps.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    TemplateComponent,
+    CvFormComponent,
+    NavbarComponent,
+    FooterComponent,
+    ProfileComponent,
+    StepsComponent
   ],
   imports: [
     BrowserModule,

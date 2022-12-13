@@ -39,8 +39,9 @@ export class LoginComponent implements OnInit {
 
       }else{
         console.log(response)
+
         //store data to local storage
-        localStorage.setItem("token1",response);
+        localStorage.setItem("token",JSON.stringify(response));
         this.router.navigate(['home'])
        
       }

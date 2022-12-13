@@ -1,26 +1,4 @@
-
-<div class="h"></div>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"> <img  class="logo1" src="../../../assets/awe.png"></a>
-    <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" [routerLink]="['/login']" routerLinkActive="router-link-active">Logout</a>
-        </li>
-    
-      </ul>
-    </div>
-  </nav>
+<app-navbar></app-navbar>
 
   <section>
     <div class="container">
@@ -29,7 +7,7 @@
           <div class="leftS">
           <img  class="logo" src="../../../assets/awe.png">
           <p>Create your very own cv and download it within 15min</p>
-          <button class="btnC"><span>Create your Cv</span></button>
+          <button class="btnC"  [routerLink]="['/template']" routerLinkActive="router-link-active" ><span>Create your Cv</span></button>
           </div>
         </div>
         <div class="col-sm">
@@ -98,7 +76,34 @@
     </div>
   </section>
 
+  <section class="sec3">
 
+    <div class="splitview skewed">
+      <div class="panel bottom">
+          <div class="content">
+              <div class="description">
+                  <h1>we got you</h1>
+                  <p></p>
+              </div>
+  
+              <img src="https://www.jobseeker.com/api/media/documents/3bdb184f-d098-44a1-b5fd-1bf34f5d2af3/CV-templates.svg?v=1650287576043" alt="Original" style="height:35rem; ">
+          </div>
+      </div>
+  
+      <div class="panel top">
+          <div class="content">
+              <div class="description">
+                  <h1></h1>
+                  <p></p>
+              </div>
+  
+              <img src="https://www.jobseeker.com/api/media/documents/3bdb184f-d098-44a1-b5fd-1bf34f5d2af3/CV-templates.svg?v=1650287576043" alt="Duotone" style="height:35rem; ">
+          </div>
+      </div>
+  
+      <div class="handle"></div>
+  </div>
+  </section>
  
    
 
@@ -161,65 +166,10 @@
       </section>
 
 
+  
 
-<!-- Footer -->
-<footer class="bg-dark text-center text-white">
+<app-footer></app-footer>
 
-  <div class="container">
-  <div class="row">
-   
-    <div class="col-sm">
-      <br>
-      Watch a turorial video
-    
-    </div>
-    <div class="col-sm">
-      <br>
-      send a query
-      <br> <br> <br>
-      <form>
-        <div class="row">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="First name">
-          </div>
-        </div>
-        <div class="row">
-          
-          <div class="col">
-            <br>
-            <input style ="height:6rem ;" type="text" class="form-control" placeholder="First name">
-          </div>
-        </div>
-        <br>
-        <button type="button" class="btn btn-primary">Send </button>
-      </form>
-    </div>
-    <div class="col-sm">
-      <br>
-      Contact us
-
-      <br><br><br>
-      <div class="ratio ratio-16x9">
-        <iframe
-          class="shadow-1-strong rounded"
-          src="https://www.youtube.com/embed/vlDzYIIOYmM"
-          title="YouTube video"
-          allowfullscreen
-        ></iframe>
-        
-      </div>
-      <br> <br> <br>
-    </div>
-  </div>
-</div>
- 
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2020 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
 
       
 
