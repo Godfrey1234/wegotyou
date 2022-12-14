@@ -19,27 +19,35 @@
       
       </div>
 
+
+
+     
       <div class="col-sm">
         <br>
         send a query
         <br> <br> <br>
-        <form>
+        <form  [formGroup]="queryForm" (ngSubmit)="onSubmit()" >
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="First name">
+              <input type="email" class="form-control" placeholder="email" required>
             </div>
           </div>
           <div class="row">
             
             <div class="col">
               <br>
-              <input style ="height:6rem ;" type="text" class="form-control" placeholder="First name">
+              <input style ="height:6rem ;" type="text" class="form-control" placeholder="Message" required>
             </div>
           </div>
           <br>
-          <button type="button" class="btn btn-primary">Send </button>
+          <button type="submit" class="btn btn-primary">Send </button>
         </form>
       </div>
+   
+
+
+
+
       <div class="col-sm">
         <br>
         Watch a turorial video

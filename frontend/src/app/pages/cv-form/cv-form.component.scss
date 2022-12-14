@@ -12,12 +12,16 @@ span{
 }
 
 .btn{
-    width:300%;
+    width:200%;
     margin-bottom: 5rem;
     position: relative;
+    margin-left: 50%;
+    margin-right: 50%;
    
-
 }
+
+
+
 
 .container1{
     width: 80%;
@@ -49,7 +53,9 @@ th{
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-  }
+}
+
+
   .connector{
       width: 70%;
       height: 2rem;
@@ -80,9 +86,9 @@ th{
 
   .col-sm{
     width: 45%;
-   
     background-color: #14213D;
-    height: 100vh;
+    height: 230vh;
+    border-radius: 0 8rem 8rem 0;
   }
 
   .col-sm1{
@@ -93,3 +99,70 @@ th{
     color: white;
     margin-top: 2rem;
   }
+
+
+
+
+
+  //cv styling
+
+  .heading{
+    
+    background-color: #14213D;
+    height: 4rem;
+   
+  }
+
+
+  span{
+    color: white;
+  
+   
+  }
+
+.topSpace{
+    margin-top: 10rem;
+}
+
+.heading1{
+    background-color: black;
+    height: 3rem;
+    border-radius: 5rem;
+    margin-top: 2rem;
+
+}
+
+p{margin-left: 1rem;}
+
+  /* Responsive. */
+@media (max-width: 900px) {
+    .stepper {
+        display: none;
+    }
+
+    .col-sm{
+        width: 45%;
+        background-color: #14213D;
+        height: 50vh;
+        border-radius: 0 2rem 2rem 0;
+      }
+    
+      .btn{
+        width:100%;
+        margin-bottom: 5rem;
+        position: relative;
+       
+    
+    }
+
+
+
+  .heading{
+    
+    background-color: #14213D;
+    height: 3rem;
+    width: 12rem;
+   
+  }
+    
+}

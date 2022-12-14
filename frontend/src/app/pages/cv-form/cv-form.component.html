@@ -16,7 +16,7 @@
   </div>
   <div class="circle">
     <i class="bi bi-cloud-arrow-down-fill"></i>
-      <span class="desc">Download</span>
+    <span class="desc">Downloaded</span>
   </div>
  
 </div>
@@ -130,13 +130,25 @@
         </div>
    
     <br>
+
+
+    <div class="head"><span>Additional</span></div>
+
+    <div class="form-group">
+        <label for="exampleInputPassword1">professional Summary</label>
+        <input type="text" [(ngModel)]="professional"  name="professional"  class="form-control" id="exampleInputPassword1" placeholder="Enter your Street Name">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Skills</label>
+        <input type="text" [(ngModel)]="skills"  name="professional"  class="form-control" id="exampleInputPassword1" placeholder="Enter your Street Name">
+      </div>
+
+ <br>
        
 
     </form>
-    <div class="col-md-4 text-right">
-      <button  class="btn btn-success btn-block" (click)="openPDF()" >Download cv</button>
- </div>
-
+  
     
     </div>
       
@@ -164,48 +176,96 @@
 
 <div class="container1" id="htmlData">
 
-<!--
-  
-  name:any;
-  surname:any;
-  contact:any;
-  email:any;
 
-  pdf:any;
-
-  text:any;
-
-  streetName:any;
-  StreetNumber: any;
-  city:any;
-  code:any;
-
-  institution:any;
-  qualification:any;
-  year:any;
-
-
-  wyear:any;
-
-
-  companyName:any;
-  position:any;
-  cyear:any;
-
-  contactPerson:any;
-  rPosition:any;
-  tel:any; -->
 
     
   <div class="container">
     <div class="row">
       <div class="col-sm">
+        
+        <br><br>
+       <h3 style="color:white ;"> Curriculum Vitae of {{name}} {{surname}}</h3>
 
-       <h1>{{name}} {{surname}}
-       </h1>
+
+       <div class="heading1"><span style="font-size:1rem">Professional Summary</span></div>
+    
+       <div class="c" style="margin-top:1rem; margin-left: 1rem;">
+        <span>{{professional}}</span>
+       </div>
+
+      
+
+
+  
+
+
+
+
+
+
+       <div class="heading1"><span style="font-size:1rem">Contact Details</span></div>
+    
+       <div class="c" style="margin-top:1rem; margin-left: 1rem;">
+        <span><i class="bi1 bi-phone-fill"></i><span>0{{contact}}</span></span>
+       </div>
+
+       <div class="c" style="margin-top:1rem; margin-left: 1rem;">
+        <span><i class="bi1 bi-house-fill"></i><span>{{StreetNumber}} {{streetName}}</span></span>
+        <br>
+        <span><span style="margin-left:2rem ;">{{city}}</span></span>
+        <br>
+        <span><span style="margin-left:2rem ;">{{code}}</span></span>
+       </div>
+
+       <div class="c" style="margin-top:1rem; margin-left: 1rem;">
+        <span><i class="bi1 bi-envelope-fill"></i><span>{{email}}</span></span>
+       </div>
+
+
+       <div class="heading1"><span style="font-size:1rem">Skills</span></div>
+    
+      <div class="c" style="margin-top:1rem; margin-left: 1rem;">
+       <span>{{skills}}</span>
       </div>
+
+      </div>
+
+
+      
+
+
+
+
+
+
       <div class="col-sm1">
-       
+
+     <div class="topSpace"></div>
+       <div class="heading"><span><span><i class="bi1 bi-buildings-fill"></i>&nbsp;</span>Educational Background</span></div>
+        <div>
+            <p>{{institution}}<p>
+            <p>{{qualification}}<p>
+            <p>{{year}}<p>
+
+        </div>
+
+
+        <br><br>
+       <div class="heading"><span><span><i class="bi1 bi-person-workspace"></i>&nbsp;</span>Working Experience</span></div>
+        <br><br>
+
+             <p>{{companyName}}<p>
+            <p>{{position}}<p>
+            <p>{{year}}<p>
+
+
+
+       <div class="heading"><span> <span><i class="bi1 bi-person-plus-fill"></i>&nbsp;</span>Reference</span></div>
+
+
+       <p>{{contactPerson}}<p>
+        <p>{{rPosition}}<p>
+        <p>{{tel}}<p>
       </div>
     
     </div>
@@ -216,6 +276,8 @@
        
 
 <br><br>
+
+
 </div>
   
 
@@ -225,7 +287,9 @@
     
    
 
-
+<div class="col-md-4 text-right">
+    <button  class="btn btn-success btn-block" (click)="openPDF()" [routerLink]="['/download']" routerLinkActive="router-link-active"><span>Download CV</span></button>
+</div>
 
 
 

@@ -19,6 +19,11 @@ export class WegotyouService {
     return this.http.post(this.baseurl+ "login",data);
   }
 
+  query(data: any){
+    return this.http.post(this.baseurl+ "query",data);
+  }
+
+
 
 
 }

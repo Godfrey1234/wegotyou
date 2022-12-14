@@ -46,6 +46,9 @@ export class CvFormComponent implements OnInit {
   rPosition:any;
   tel:any;
 
+  professional:any
+
+  skills!:[];
 
 
 
@@ -71,6 +74,8 @@ export class CvFormComponent implements OnInit {
       PDF.save('cv.pdf');
      this.pdf =  FILEURI; // can add to database
      console.log(FILEURI)
+
+     localStorage.setItem("img",this.pdf);
     });
     
   }
